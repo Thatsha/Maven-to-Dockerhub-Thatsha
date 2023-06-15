@@ -12,5 +12,5 @@ COPY pom.xml /app/
 RUN mvn clean install
 
 # Set the command to run your application
-CMD ["java", "-jar", "DataType-application.jar"]
+CMD ["java", "-jar", "datatype-application.jar"]
 
