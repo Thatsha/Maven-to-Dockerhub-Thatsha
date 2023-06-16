@@ -1,5 +1,5 @@
 # Use a base image with Java installed
-FROM openjdk:8-jdk
+FROM openjdk8
 
 # Set the working directory in the container
 WORKDIR /app
