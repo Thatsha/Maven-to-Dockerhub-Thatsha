@@ -1,1 +1,0 @@
-# Maven-to-Dockerhub-Thatsha
