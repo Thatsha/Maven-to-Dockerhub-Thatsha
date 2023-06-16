@@ -1,9 +1,14 @@
-package maven_git_jenkins_dockerhub;
+package com.helloworld;
 
-public class DataTypes {
-	public static void main(String[] args) {
-        System.out.println("Thatsha-DataType-Application");		
-	}
-	}
+import javax.servlet.*;
+import javax.servlet.http.*;
+import java.io.*;
 
-
+public class HelloWorld extends HttpServlet 
+{
+  public void service( HttpServletRequest req, HttpServletResponse res ) throws IOException {
+    PrintWriter out = res.getWriter();
+    out.println( "Hello, World!" );
+    out.close();
+  }
+}
