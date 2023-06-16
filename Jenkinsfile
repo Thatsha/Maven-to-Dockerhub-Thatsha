@@ -3,12 +3,9 @@ pipeline {
     tools {
         maven 'maven_3.9.2' 
     }
-    environment {
-        DATE = new Date().format('yy.M')
-        TAG = "${DATE}.${BUILD_NUMBER}"
-    }
+    
     stages {
-        stage ('Build') {
+        stage ('Build Maven') {
             steps {
                 sh 'mvn clean install'
             }
